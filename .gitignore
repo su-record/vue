@@ -1,4 +1,12 @@
+# Mac caching file
 .DS_Store
+
+# Editor directories and files
 .idea
+.vscode
+
+# Node modules folder
 node_modules/
+
+# Lock file
 
