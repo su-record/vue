@@ -1,0 +1,12 @@
+{
+  //... https://velog.io/@kyusung/eslint-prettier-config
+  "singleQuote": false, // single 쿼테이션 사용
+  "semi": true, // 세미콜론 사용
+  "useTabs": false, // 탭 사용
+  "tabWidth": 2, // 탭 너비
+  "trailingComma": "all", //여러 줄을 사용할 때, 후행 콤마 사용
+  "printWidth": 90, // 줄 바꿈 길이
+  "bracketSpacing": true, // 객체 리터럴 괄호 공백
+  "arrowParens": "avoid", // 화살표 함수 괄호 사용
+  "endOfLine": "auto", // EoF 방식, OS별로 처리 방식이 다름
+}
