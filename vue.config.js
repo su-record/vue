@@ -5,7 +5,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
   assetsDir: "assets",
   productionSourceMap: false,
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     config.resolve.alias.set("@", path.resolve(__dirname, "src/"));
     config.module.rule("images").set("parser", {
       dataUrlCondition: {
@@ -13,7 +13,7 @@ module.exports = defineConfig({
       },
     });
   },
-  configureWebpack: config => {
+  configureWebpack: (config) => {
     if (NODE_ENV === "production") {
       config.mode = "production";
       // config.output.filename = 'js/[name].[hash].js'
@@ -22,17 +22,17 @@ module.exports = defineConfig({
       config.mode = "development";
     }
   },
-  css: {
-    extract: true,
-    sourceMap: true,
-    loaderOptions: {
-      scss: {
-        additionalData: `
-          @import "@/assets/styles/override.scss";
-        `,
-      },
-    },
-  },
+  // css: {
+  //   extract: true,
+  //   sourceMap: true,
+  //   loaderOptions: {
+  //     scss: {
+  //       additionalData: `
+  //         @import "@/assets/styles/override.scss";
+  //       `,
+  //     },
+  //   },
+  // },
   devServer: {
     // port: VUE_APP_PORT,
     hot: true,
