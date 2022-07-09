@@ -2,26 +2,13 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <router-link to="/su">Su View</router-link>
   </nav>
 
-  <pre>{{ obj1 }}</pre>
-  <pre>{{ obj2 }}</pre>
-
-  <!--  <router-view />-->
+  <router-view />
 </template>
 
-<script setup lang="ts">
-import { createLoadPageVo, LoadPageVo } from "@/testcode/LoadPageVo";
-
-const obj1 = new LoadPageVo({
-  res_s_tm: new Date().toISOString(),
-  res_s_show_page_id: "page_id_001",
-});
-const obj2 = createLoadPageVo({
-  res_s_tm: new Date().toISOString(),
-  res_s_show_page_id: "page_id_002",
-});
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss">
 #app {
