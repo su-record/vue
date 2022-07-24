@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-const title = "Hi, 👋~ my name is Su";
+const title = 'Hi, 👋~ my name is Su';
 </script>
